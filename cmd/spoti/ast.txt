@@ -1,0 +1,948 @@
+(map[string]*ast.Package) (len=1) {
+ (string) (len=3) "api": (*ast.Package)(0xc00009c960)({
+  Name: (string) (len=3) "api",
+  Scope: (*ast.Scope)(<nil>),
+  Imports: (map[string]*ast.Object) <nil>,
+  Files: (map[string]*ast.File) (len=2) {
+   (string) (len=10) "message.go": (*ast.File)(0xc0000ce080)({
+    Doc: (*ast.CommentGroup)(<nil>),
+    Package: (token.Pos) 1,
+    Name: (*ast.Ident)(0xc00007c100)(api),
+    Decls: ([]ast.Decl) (len=8 cap=8) {
+     (*ast.GenDecl)(0xc0000aa100)({
+      Doc: (*ast.CommentGroup)(<nil>),
+      TokPos: (token.Pos) 37,
+      Tok: (token.Token) type,
+      Lparen: (token.Pos) 0,
+      Specs: ([]ast.Spec) (len=1 cap=1) {
+       (*ast.TypeSpec)(0xc00009c480)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Name: (*ast.Ident)(0xc00007c120)(MulArg),
+        Assign: (token.Pos) 0,
+        Type: (*ast.StructType)(0xc00000c078)({
+         Struct: (token.Pos) 49,
+         Fields: (*ast.FieldList)(0xc00009c4b0)({
+          Opening: (token.Pos) 56,
+          List: ([]*ast.Field) (len=2 cap=2) {
+           (*ast.Field)(0xc0000aa080)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007c140)(Left)
+            },
+            Type: (*ast.Ident)(0xc00007c160)(float64),
+            Tag: (*ast.BasicLit)(0xc00007c180)({
+             ValuePos: (token.Pos) 73,
+             Kind: (token.Token) STRING,
+             Value: (string) (len=51) "`json:\"left\" form:\"left\" valid:\"int\" help:\"左值\"`"
+            }),
+            Comment: (*ast.CommentGroup)(<nil>)
+           }),
+           (*ast.Field)(0xc0000aa0c0)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007c1a0)(Right)
+            },
+            Type: (*ast.Ident)(0xc00007c1c0)(float64),
+            Tag: (*ast.BasicLit)(0xc00007c1e0)({
+             ValuePos: (token.Pos) 140,
+             Kind: (token.Token) STRING,
+             Value: (string) (len=53) "`json:\"right\" form:\"right\" valid:\"int\" help:\"右值\"`"
+            }),
+            Comment: (*ast.CommentGroup)(<nil>)
+           })
+          },
+          Closing: (token.Pos) 194
+         }),
+         Incomplete: (bool) false
+        }),
+        Comment: (*ast.CommentGroup)(<nil>)
+       })
+      },
+      Rparen: (token.Pos) 0
+     }),
+     (*ast.GenDecl)(0xc0000aa180)({
+      Doc: (*ast.CommentGroup)(<nil>),
+      TokPos: (token.Pos) 222,
+      Tok: (token.Token) type,
+      Lparen: (token.Pos) 0,
+      Specs: ([]ast.Spec) (len=1 cap=1) {
+       (*ast.TypeSpec)(0xc00009c4e0)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Name: (*ast.Ident)(0xc00007c200)(MulReply),
+        Assign: (token.Pos) 0,
+        Type: (*ast.StructType)(0xc00000c090)({
+         Struct: (token.Pos) 236,
+         Fields: (*ast.FieldList)(0xc00009c510)({
+          Opening: (token.Pos) 243,
+          List: ([]*ast.Field) (len=1 cap=1) {
+           (*ast.Field)(0xc0000aa140)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007c220)(Result)
+            },
+            Type: (*ast.Ident)(0xc00007c240)(float64),
+            Tag: (*ast.BasicLit)(0xc00007c260)({
+             ValuePos: (token.Pos) 261,
+             Kind: (token.Token) STRING,
+             Value: (string) (len=15) "`json:\"result\"`"
+            }),
+            Comment: (*ast.CommentGroup)(<nil>)
+           })
+          },
+          Closing: (token.Pos) 277
+         }),
+         Incomplete: (bool) false
+        }),
+        Comment: (*ast.CommentGroup)(<nil>)
+       })
+      },
+      Rparen: (token.Pos) 0
+     }),
+     (*ast.GenDecl)(0xc0000aa240)({
+      Doc: (*ast.CommentGroup)(<nil>),
+      TokPos: (token.Pos) 294,
+      Tok: (token.Token) type,
+      Lparen: (token.Pos) 0,
+      Specs: ([]ast.Spec) (len=1 cap=1) {
+       (*ast.TypeSpec)(0xc00009c540)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Name: (*ast.Ident)(0xc00007c2a0)(AddArg),
+        Assign: (token.Pos) 0,
+        Type: (*ast.StructType)(0xc00000c0a8)({
+         Struct: (token.Pos) 306,
+         Fields: (*ast.FieldList)(0xc00009c570)({
+          Opening: (token.Pos) 313,
+          List: ([]*ast.Field) (len=2 cap=2) {
+           (*ast.Field)(0xc0000aa1c0)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007c2c0)(Left)
+            },
+            Type: (*ast.Ident)(0xc00007c2e0)(int),
+            Tag: (*ast.BasicLit)(0xc00007c300)({
+             ValuePos: (token.Pos) 326,
+             Kind: (token.Token) STRING,
+             Value: (string) (len=51) "`json:\"left\" form:\"left\" valid:\"int\" help:\"左值\"`"
+            }),
+            Comment: (*ast.CommentGroup)(<nil>)
+           }),
+           (*ast.Field)(0xc0000aa200)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007c320)(Right)
+            },
+            Type: (*ast.Ident)(0xc00007c340)(int),
+            Tag: (*ast.BasicLit)(0xc00007c360)({
+             ValuePos: (token.Pos) 389,
+             Kind: (token.Token) STRING,
+             Value: (string) (len=53) "`json:\"right\" form:\"right\" valid:\"int\" help:\"右值\"`"
+            }),
+            Comment: (*ast.CommentGroup)(<nil>)
+           })
+          },
+          Closing: (token.Pos) 443
+         }),
+         Incomplete: (bool) false
+        }),
+        Comment: (*ast.CommentGroup)(<nil>)
+       })
+      },
+      Rparen: (token.Pos) 0
+     }),
+     (*ast.GenDecl)(0xc0000aa300)({
+      Doc: (*ast.CommentGroup)(<nil>),
+      TokPos: (token.Pos) 462,
+      Tok: (token.Token) type,
+      Lparen: (token.Pos) 0,
+      Specs: ([]ast.Spec) (len=1 cap=1) {
+       (*ast.TypeSpec)(0xc00009c5a0)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Name: (*ast.Ident)(0xc00007c380)(AddReply),
+        Assign: (token.Pos) 0,
+        Type: (*ast.StructType)(0xc00000c0c0)({
+         Struct: (token.Pos) 476,
+         Fields: (*ast.FieldList)(0xc00009c5d0)({
+          Opening: (token.Pos) 483,
+          List: ([]*ast.Field) (len=1 cap=1) {
+           (*ast.Field)(0xc0000aa2c0)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007c3a0)(Result)
+            },
+            Type: (*ast.Ident)(0xc00007c3c0)(int),
+            Tag: (*ast.BasicLit)(0xc00007c3e0)({
+             ValuePos: (token.Pos) 497,
+             Kind: (token.Token) STRING,
+             Value: (string) (len=15) "`json:\"result\"`"
+            }),
+            Comment: (*ast.CommentGroup)(<nil>)
+           })
+          },
+          Closing: (token.Pos) 513
+         }),
+         Incomplete: (bool) false
+        }),
+        Comment: (*ast.CommentGroup)(<nil>)
+       })
+      },
+      Rparen: (token.Pos) 0
+     }),
+     (*ast.GenDecl)(0xc0000aa3c0)({
+      Doc: (*ast.CommentGroup)(<nil>),
+      TokPos: (token.Pos) 530,
+      Tok: (token.Token) type,
+      Lparen: (token.Pos) 0,
+      Specs: ([]ast.Spec) (len=1 cap=1) {
+       (*ast.TypeSpec)(0xc00009c600)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Name: (*ast.Ident)(0xc00007c400)(DivArg),
+        Assign: (token.Pos) 0,
+        Type: (*ast.StructType)(0xc00000c0d8)({
+         Struct: (token.Pos) 542,
+         Fields: (*ast.FieldList)(0xc00009c630)({
+          Opening: (token.Pos) 549,
+          List: ([]*ast.Field) (len=2 cap=2) {
+           (*ast.Field)(0xc0000aa340)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007c420)(Left)
+            },
+            Type: (*ast.Ident)(0xc00007c440)(int),
+            Tag: (*ast.BasicLit)(0xc00007c460)({
+             ValuePos: (token.Pos) 562,
+             Kind: (token.Token) STRING,
+             Value: (string) (len=27) "`json:\"left\" help:\"左值\"`"
+            }),
+            Comment: (*ast.CommentGroup)(<nil>)
+           }),
+           (*ast.Field)(0xc0000aa380)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007c480)(Right)
+            },
+            Type: (*ast.Ident)(0xc00007c4a0)(int),
+            Tag: (*ast.BasicLit)(0xc00007c4c0)({
+             ValuePos: (token.Pos) 601,
+             Kind: (token.Token) STRING,
+             Value: (string) (len=28) "`json:\"right\" help:\"右值\"`"
+            }),
+            Comment: (*ast.CommentGroup)(<nil>)
+           })
+          },
+          Closing: (token.Pos) 630
+         }),
+         Incomplete: (bool) false
+        }),
+        Comment: (*ast.CommentGroup)(<nil>)
+       })
+      },
+      Rparen: (token.Pos) 0
+     }),
+     (*ast.GenDecl)(0xc0000aa440)({
+      Doc: (*ast.CommentGroup)(<nil>),
+      TokPos: (token.Pos) 649,
+      Tok: (token.Token) type,
+      Lparen: (token.Pos) 0,
+      Specs: ([]ast.Spec) (len=1 cap=1) {
+       (*ast.TypeSpec)(0xc00009c660)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Name: (*ast.Ident)(0xc00007c4e0)(DivReply),
+        Assign: (token.Pos) 0,
+        Type: (*ast.StructType)(0xc00000c0f0)({
+         Struct: (token.Pos) 663,
+         Fields: (*ast.FieldList)(0xc00009c690)({
+          Opening: (token.Pos) 670,
+          List: ([]*ast.Field) (len=1 cap=1) {
+           (*ast.Field)(0xc0000aa400)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007c500)(Result)
+            },
+            Type: (*ast.Ident)(0xc00007c520)(int),
+            Tag: (*ast.BasicLit)(0xc00007c540)({
+             ValuePos: (token.Pos) 684,
+             Kind: (token.Token) STRING,
+             Value: (string) (len=15) "`json:\"result\"`"
+            }),
+            Comment: (*ast.CommentGroup)(<nil>)
+           })
+          },
+          Closing: (token.Pos) 700
+         }),
+         Incomplete: (bool) false
+        }),
+        Comment: (*ast.CommentGroup)(<nil>)
+       })
+      },
+      Rparen: (token.Pos) 0
+     }),
+     (*ast.GenDecl)(0xc0000aa4c0)({
+      Doc: (*ast.CommentGroup)(<nil>),
+      TokPos: (token.Pos) 703,
+      Tok: (token.Token) type,
+      Lparen: (token.Pos) 0,
+      Specs: ([]ast.Spec) (len=1 cap=1) {
+       (*ast.TypeSpec)(0xc00009c6c0)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Name: (*ast.Ident)(0xc00007c560)(GetUserInfoArg),
+        Assign: (token.Pos) 0,
+        Type: (*ast.StructType)(0xc00000c108)({
+         Struct: (token.Pos) 723,
+         Fields: (*ast.FieldList)(0xc00009c6f0)({
+          Opening: (token.Pos) 730,
+          List: ([]*ast.Field) (len=1 cap=1) {
+           (*ast.Field)(0xc0000aa480)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007c580)(ID)
+            },
+            Type: (*ast.Ident)(0xc00007c5a0)(int32),
+            Tag: (*ast.BasicLit)(0xc00007c5c0)({
+             ValuePos: (token.Pos) 742,
+             Kind: (token.Token) STRING,
+             Value: (string) (len=11) "`path:\"id\"`"
+            }),
+            Comment: (*ast.CommentGroup)(<nil>)
+           })
+          },
+          Closing: (token.Pos) 754
+         }),
+         Incomplete: (bool) false
+        }),
+        Comment: (*ast.CommentGroup)(<nil>)
+       })
+      },
+      Rparen: (token.Pos) 0
+     }),
+     (*ast.GenDecl)(0xc0000aa600)({
+      Doc: (*ast.CommentGroup)(<nil>),
+      TokPos: (token.Pos) 757,
+      Tok: (token.Token) type,
+      Lparen: (token.Pos) 0,
+      Specs: ([]ast.Spec) (len=1 cap=1) {
+       (*ast.TypeSpec)(0xc00009c720)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Name: (*ast.Ident)(0xc00007c5e0)(GetUserInfoReply),
+        Assign: (token.Pos) 0,
+        Type: (*ast.StructType)(0xc00000c120)({
+         Struct: (token.Pos) 779,
+         Fields: (*ast.FieldList)(0xc00009c750)({
+          Opening: (token.Pos) 786,
+          List: ([]*ast.Field) (len=4 cap=4) {
+           (*ast.Field)(0xc0000aa500)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007c600)(ID)
+            },
+            Type: (*ast.Ident)(0xc00007c620)(int32),
+            Tag: (*ast.BasicLit)(0xc00007c640)({
+             ValuePos: (token.Pos) 804,
+             Kind: (token.Token) STRING,
+             Value: (string) (len=11) "`json:\"id\"`"
+            }),
+            Comment: (*ast.CommentGroup)(<nil>)
+           }),
+           (*ast.Field)(0xc0000aa540)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007c660)(Email)
+            },
+            Type: (*ast.Ident)(0xc00007c680)(string),
+            Tag: (*ast.BasicLit)(0xc00007c6a0)({
+             ValuePos: (token.Pos) 832,
+             Kind: (token.Token) STRING,
+             Value: (string) (len=14) "`json:\"email\"`"
+            }),
+            Comment: (*ast.CommentGroup)(<nil>)
+           }),
+           (*ast.Field)(0xc0000aa580)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007c6c0)(Phone)
+            },
+            Type: (*ast.Ident)(0xc00007c6e0)(string),
+            Tag: (*ast.BasicLit)(0xc00007c700)({
+             ValuePos: (token.Pos) 863,
+             Kind: (token.Token) STRING,
+             Value: (string) (len=14) "`json:\"phone\"`"
+            }),
+            Comment: (*ast.CommentGroup)(<nil>)
+           }),
+           (*ast.Field)(0xc0000aa5c0)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007c740)(Account)
+            },
+            Type: (*ast.Ident)(0xc00007c760)(int32),
+            Tag: (*ast.BasicLit)(0xc00007c780)({
+             ValuePos: (token.Pos) 894,
+             Kind: (token.Token) STRING,
+             Value: (string) (len=12) "`json:\"sex\"`"
+            }),
+            Comment: (*ast.CommentGroup)(<nil>)
+           })
+          },
+          Closing: (token.Pos) 907
+         }),
+         Incomplete: (bool) false
+        }),
+        Comment: (*ast.CommentGroup)(<nil>)
+       })
+      },
+      Rparen: (token.Pos) 0
+     })
+    },
+    Scope: (*ast.Scope)(0xc000010450)(scope 0xc000010450 {
+	type GetUserInfoArg
+	type GetUserInfoReply
+	type MulArg
+	type MulReply
+	type AddArg
+	type AddReply
+	type DivArg
+	type DivReply
+}
+),
+    Imports: ([]*ast.ImportSpec) <nil>,
+    Unresolved: ([]*ast.Ident) (len=14 cap=16) {
+     (*ast.Ident)(0xc00007c160)(float64),
+     (*ast.Ident)(0xc00007c1c0)(float64),
+     (*ast.Ident)(0xc00007c240)(float64),
+     (*ast.Ident)(0xc00007c2e0)(int),
+     (*ast.Ident)(0xc00007c340)(int),
+     (*ast.Ident)(0xc00007c3c0)(int),
+     (*ast.Ident)(0xc00007c440)(int),
+     (*ast.Ident)(0xc00007c4a0)(int),
+     (*ast.Ident)(0xc00007c520)(int),
+     (*ast.Ident)(0xc00007c5a0)(int32),
+     (*ast.Ident)(0xc00007c620)(int32),
+     (*ast.Ident)(0xc00007c680)(string),
+     (*ast.Ident)(0xc00007c6e0)(string),
+     (*ast.Ident)(0xc00007c760)(int32)
+    },
+    Comments: ([]*ast.CommentGroup) <nil>
+   }),
+   (string) (len=10) "service.go": (*ast.File)(0xc0000ce180)({
+    Doc: (*ast.CommentGroup)(<nil>),
+    Package: (token.Pos) 910,
+    Name: (*ast.Ident)(0xc00007c7c0)(api),
+    Decls: ([]ast.Decl) (len=4 cap=4) {
+     (*ast.GenDecl)(0xc0000aa6c0)({
+      Doc: (*ast.CommentGroup)(<nil>),
+      TokPos: (token.Pos) 923,
+      Tok: (token.Token) import,
+      Lparen: (token.Pos) 930,
+      Specs: ([]ast.Spec) (len=3 cap=4) {
+       (*ast.ImportSpec)(0xc00009c990)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Name: (*ast.Ident)(<nil>),
+        Path: (*ast.BasicLit)(0xc00007c7e0)({
+         ValuePos: (token.Pos) 933,
+         Kind: (token.Token) STRING,
+         Value: (string) (len=9) "\"context\""
+        }),
+        Comment: (*ast.CommentGroup)(<nil>),
+        EndPos: (token.Pos) 0
+       }),
+       (*ast.ImportSpec)(0xc00009c9c0)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Name: (*ast.Ident)(<nil>),
+        Path: (*ast.BasicLit)(0xc00007c800)({
+         ValuePos: (token.Pos) 944,
+         Kind: (token.Token) STRING,
+         Value: (string) (len=7) "\"embed\""
+        }),
+        Comment: (*ast.CommentGroup)(<nil>),
+        EndPos: (token.Pos) 0
+       }),
+       (*ast.ImportSpec)(0xc00009c9f0)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Name: (*ast.Ident)(<nil>),
+        Path: (*ast.BasicLit)(0xc00007c840)({
+         ValuePos: (token.Pos) 953,
+         Kind: (token.Token) STRING,
+         Value: (string) (len=8) "\"errors\""
+        }),
+        Comment: (*ast.CommentGroup)(<nil>),
+        EndPos: (token.Pos) 0
+       })
+      },
+      Rparen: (token.Pos) 962
+     }),
+     (*ast.GenDecl)(0xc0000aa700)({
+      Doc: (*ast.CommentGroup)(<nil>),
+      TokPos: (token.Pos) 998,
+      Tok: (token.Token) var,
+      Lparen: (token.Pos) 0,
+      Specs: ([]ast.Spec) (len=1 cap=1) {
+       (*ast.ValueSpec)(0xc000090870)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Names: ([]*ast.Ident) (len=1 cap=1) {
+         (*ast.Ident)(0xc00007c880)(Specific)
+        },
+        Type: (*ast.SelectorExpr)(0xc00000c150)({
+         X: (*ast.Ident)(0xc00007c8a0)(embed),
+         Sel: (*ast.Ident)(0xc00007c8c0)(FS)
+        }),
+        Values: ([]ast.Expr) <nil>,
+        Comment: (*ast.CommentGroup)(<nil>)
+       })
+      },
+      Rparen: (token.Pos) 0
+     }),
+     (*ast.GenDecl)(0xc0000aa880)({
+      Doc: (*ast.CommentGroup)(<nil>),
+      TokPos: (token.Pos) 1021,
+      Tok: (token.Token) var,
+      Lparen: (token.Pos) 1025,
+      Specs: ([]ast.Spec) (len=4 cap=4) {
+       (*ast.ValueSpec)(0xc0000908c0)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Names: ([]*ast.Ident) (len=1 cap=1) {
+         (*ast.Ident)(0xc00007c900)(ErrUnknown)
+        },
+        Type: (ast.Expr) <nil>,
+        Values: ([]ast.Expr) (len=1 cap=1) {
+         (*ast.CallExpr)(0xc0000aa740)({
+          Fun: (*ast.SelectorExpr)(0xc00000c168)({
+           X: (*ast.Ident)(0xc00007c920)(errors),
+           Sel: (*ast.Ident)(0xc00007c940)(New)
+          }),
+          Lparen: (token.Pos) 1060,
+          Args: ([]ast.Expr) (len=1 cap=1) {
+           (*ast.BasicLit)(0xc00007c960)({
+            ValuePos: (token.Pos) 1061,
+            Kind: (token.Token) STRING,
+            Value: (string) (len=20) "\"[9999]未知错误\""
+           })
+          },
+          Ellipsis: (token.Pos) 0,
+          Rparen: (token.Pos) 1081
+         })
+        },
+        Comment: (*ast.CommentGroup)(<nil>)
+       }),
+       (*ast.ValueSpec)(0xc000090910)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Names: ([]*ast.Ident) (len=1 cap=1) {
+         (*ast.Ident)(0xc00007c980)(ErrInvalidArgument)
+        },
+        Type: (ast.Expr) <nil>,
+        Values: ([]ast.Expr) (len=1 cap=1) {
+         (*ast.CallExpr)(0xc0000aa780)({
+          Fun: (*ast.SelectorExpr)(0xc00000c180)({
+           X: (*ast.Ident)(0xc00007c9a0)(errors),
+           Sel: (*ast.Ident)(0xc00007c9c0)(New)
+          }),
+          Lparen: (token.Pos) 1116,
+          Args: ([]ast.Expr) (len=1 cap=1) {
+           (*ast.BasicLit)(0xc00007c9e0)({
+            ValuePos: (token.Pos) 1117,
+            Kind: (token.Token) STRING,
+            Value: (string) (len=26) "\"[1001]请求参数错误\""
+           })
+          },
+          Ellipsis: (token.Pos) 0,
+          Rparen: (token.Pos) 1143
+         })
+        },
+        Comment: (*ast.CommentGroup)(<nil>)
+       }),
+       (*ast.ValueSpec)(0xc000090960)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Names: ([]*ast.Ident) (len=1 cap=1) {
+         (*ast.Ident)(0xc00007ca20)(ErrPermissionDenied)
+        },
+        Type: (ast.Expr) <nil>,
+        Values: ([]ast.Expr) (len=1 cap=1) {
+         (*ast.CallExpr)(0xc0000aa7c0)({
+          Fun: (*ast.SelectorExpr)(0xc00000c198)({
+           X: (*ast.Ident)(0xc00007ca40)(errors),
+           Sel: (*ast.Ident)(0xc00007ca60)(New)
+          }),
+          Lparen: (token.Pos) 1178,
+          Args: ([]ast.Expr) (len=1 cap=1) {
+           (*ast.BasicLit)(0xc00007ca80)({
+            ValuePos: (token.Pos) 1179,
+            Kind: (token.Token) STRING,
+            Value: (string) (len=20) "\"[1002]禁止操作\""
+           })
+          },
+          Ellipsis: (token.Pos) 0,
+          Rparen: (token.Pos) 1199
+         })
+        },
+        Comment: (*ast.CommentGroup)(<nil>)
+       }),
+       (*ast.ValueSpec)(0xc0000909b0)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Names: ([]*ast.Ident) (len=1 cap=1) {
+         (*ast.Ident)(0xc00007caa0)(ErrPersonNotFound)
+        },
+        Type: (ast.Expr) <nil>,
+        Values: ([]ast.Expr) (len=1 cap=1) {
+         (*ast.CallExpr)(0xc0000aa840)({
+          Fun: (*ast.SelectorExpr)(0xc00000c1b0)({
+           X: (*ast.Ident)(0xc00007cac0)(errors),
+           Sel: (*ast.Ident)(0xc00007cae0)(New)
+          }),
+          Lparen: (token.Pos) 1233,
+          Args: ([]ast.Expr) (len=1 cap=1) {
+           (*ast.BasicLit)(0xc00007cb00)({
+            ValuePos: (token.Pos) 1234,
+            Kind: (token.Token) STRING,
+            Value: (string) (len=23) "\"[4001]用户未找到\""
+           })
+          },
+          Ellipsis: (token.Pos) 0,
+          Rparen: (token.Pos) 1257
+         })
+        },
+        Comment: (*ast.CommentGroup)(<nil>)
+       })
+      },
+      Rparen: (token.Pos) 1259
+     }),
+     (*ast.GenDecl)(0xc0000aae00)({
+      Doc: (*ast.CommentGroup)(<nil>),
+      TokPos: (token.Pos) 1397,
+      Tok: (token.Token) type,
+      Lparen: (token.Pos) 0,
+      Specs: ([]ast.Spec) (len=1 cap=1) {
+       (*ast.TypeSpec)(0xc00009ca20)({
+        Doc: (*ast.CommentGroup)(<nil>),
+        Name: (*ast.Ident)(0xc00007cb20)(Calc),
+        Assign: (token.Pos) 0,
+        Type: (*ast.InterfaceType)(0xc00000c3a8)({
+         Interface: (token.Pos) 1407,
+         Methods: (*ast.FieldList)(0xc00009cd50)({
+          Opening: (token.Pos) 1417,
+          List: ([]*ast.Field) (len=4 cap=4) {
+           (*ast.Field)(0xc0000aaa00)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007cb40)(Add)
+            },
+            Type: (*ast.FuncType)(0xc00000c228)({
+             Func: (token.Pos) 0,
+             Params: (*ast.FieldList)(0xc00009ca80)({
+              Opening: (token.Pos) 1439,
+              List: ([]*ast.Field) (len=2 cap=2) {
+               (*ast.Field)(0xc0000aa900)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) (len=1 cap=1) {
+                 (*ast.Ident)(0xc00007cb60)(ctx)
+                },
+                Type: (*ast.SelectorExpr)(0xc00000c1c8)({
+                 X: (*ast.Ident)(0xc00007cb80)(context),
+                 Sel: (*ast.Ident)(0xc00007cba0)(Context)
+                }),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               }),
+               (*ast.Field)(0xc0000aa940)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) (len=1 cap=1) {
+                 (*ast.Ident)(0xc00007cbc0)(arg)
+                },
+                Type: (*ast.Ident)(0xc00007cbe0)(AddArg),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               })
+              },
+              Closing: (token.Pos) 1471
+             }),
+             Results: (*ast.FieldList)(0xc00009cae0)({
+              Opening: (token.Pos) 1473,
+              List: ([]*ast.Field) (len=2 cap=2) {
+               (*ast.Field)(0xc0000aa980)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) <nil>,
+                Type: (*ast.StarExpr)(0xc00000c1f8)({
+                 Star: (token.Pos) 1474,
+                 X: (*ast.Ident)(0xc00007cc00)(AddReply)
+                }),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               }),
+               (*ast.Field)(0xc0000aa9c0)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) <nil>,
+                Type: (*ast.Ident)(0xc00007cc20)(error),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               })
+              },
+              Closing: (token.Pos) 1490
+             })
+            }),
+            Tag: (*ast.BasicLit)(<nil>),
+            Comment: (*ast.CommentGroup)(<nil>)
+           }),
+           (*ast.Field)(0xc0000aab40)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007cc40)(Div)
+            },
+            Type: (*ast.FuncType)(0xc00000c2a0)({
+             Func: (token.Pos) 0,
+             Params: (*ast.FieldList)(0xc00009cb40)({
+              Opening: (token.Pos) 1512,
+              List: ([]*ast.Field) (len=2 cap=2) {
+               (*ast.Field)(0xc0000aaa40)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) (len=1 cap=1) {
+                 (*ast.Ident)(0xc00007cc60)(ctx)
+                },
+                Type: (*ast.SelectorExpr)(0xc00000c240)({
+                 X: (*ast.Ident)(0xc00007cc80)(context),
+                 Sel: (*ast.Ident)(0xc00007cca0)(Context)
+                }),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               }),
+               (*ast.Field)(0xc0000aaa80)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) (len=1 cap=1) {
+                 (*ast.Ident)(0xc00007ccc0)(arg)
+                },
+                Type: (*ast.Ident)(0xc00007cce0)(DivArg),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               })
+              },
+              Closing: (token.Pos) 1544
+             }),
+             Results: (*ast.FieldList)(0xc00009cba0)({
+              Opening: (token.Pos) 1546,
+              List: ([]*ast.Field) (len=2 cap=2) {
+               (*ast.Field)(0xc0000aaac0)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) <nil>,
+                Type: (*ast.StarExpr)(0xc00000c270)({
+                 Star: (token.Pos) 1547,
+                 X: (*ast.Ident)(0xc00007cd00)(DivReply)
+                }),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               }),
+               (*ast.Field)(0xc0000aab00)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) <nil>,
+                Type: (*ast.Ident)(0xc00007cd20)(error),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               })
+              },
+              Closing: (token.Pos) 1563
+             })
+            }),
+            Tag: (*ast.BasicLit)(<nil>),
+            Comment: (*ast.CommentGroup)(<nil>)
+           }),
+           (*ast.Field)(0xc0000aac80)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007cd40)(Mul)
+            },
+            Type: (*ast.FuncType)(0xc00000c318)({
+             Func: (token.Pos) 0,
+             Params: (*ast.FieldList)(0xc00009cc00)({
+              Opening: (token.Pos) 1585,
+              List: ([]*ast.Field) (len=2 cap=2) {
+               (*ast.Field)(0xc0000aab80)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) (len=1 cap=1) {
+                 (*ast.Ident)(0xc00007cd60)(ctx)
+                },
+                Type: (*ast.SelectorExpr)(0xc00000c2b8)({
+                 X: (*ast.Ident)(0xc00007cd80)(context),
+                 Sel: (*ast.Ident)(0xc00007cda0)(Context)
+                }),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               }),
+               (*ast.Field)(0xc0000aabc0)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) (len=1 cap=1) {
+                 (*ast.Ident)(0xc00007cdc0)(arg)
+                },
+                Type: (*ast.Ident)(0xc00007cde0)(MulArg),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               })
+              },
+              Closing: (token.Pos) 1617
+             }),
+             Results: (*ast.FieldList)(0xc00009cc60)({
+              Opening: (token.Pos) 1619,
+              List: ([]*ast.Field) (len=2 cap=2) {
+               (*ast.Field)(0xc0000aac00)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) <nil>,
+                Type: (*ast.StarExpr)(0xc00000c2e8)({
+                 Star: (token.Pos) 1620,
+                 X: (*ast.Ident)(0xc00007ce00)(MulReply)
+                }),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               }),
+               (*ast.Field)(0xc0000aac40)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) <nil>,
+                Type: (*ast.Ident)(0xc00007ce20)(error),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               })
+              },
+              Closing: (token.Pos) 1636
+             })
+            }),
+            Tag: (*ast.BasicLit)(<nil>),
+            Comment: (*ast.CommentGroup)(<nil>)
+           }),
+           (*ast.Field)(0xc0000aadc0)({
+            Doc: (*ast.CommentGroup)(<nil>),
+            Names: ([]*ast.Ident) (len=1 cap=1) {
+             (*ast.Ident)(0xc00007ce60)(GetUserInfo)
+            },
+            Type: (*ast.FuncType)(0xc00000c390)({
+             Func: (token.Pos) 0,
+             Params: (*ast.FieldList)(0xc00009ccc0)({
+              Opening: (token.Pos) 1791,
+              List: ([]*ast.Field) (len=2 cap=2) {
+               (*ast.Field)(0xc0000aacc0)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) (len=1 cap=1) {
+                 (*ast.Ident)(0xc00007ce80)(ctx)
+                },
+                Type: (*ast.SelectorExpr)(0xc00000c330)({
+                 X: (*ast.Ident)(0xc00007cea0)(context),
+                 Sel: (*ast.Ident)(0xc00007cec0)(Context)
+                }),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               }),
+               (*ast.Field)(0xc0000aad00)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) (len=1 cap=1) {
+                 (*ast.Ident)(0xc00007cee0)(arg)
+                },
+                Type: (*ast.Ident)(0xc00007cf00)(GetUserInfoArg),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               })
+              },
+              Closing: (token.Pos) 1831
+             }),
+             Results: (*ast.FieldList)(0xc00009cd20)({
+              Opening: (token.Pos) 1833,
+              List: ([]*ast.Field) (len=2 cap=2) {
+               (*ast.Field)(0xc0000aad40)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) <nil>,
+                Type: (*ast.StarExpr)(0xc00000c360)({
+                 Star: (token.Pos) 1834,
+                 X: (*ast.Ident)(0xc00007cf20)(GetUserInfoReply)
+                }),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               }),
+               (*ast.Field)(0xc0000aad80)({
+                Doc: (*ast.CommentGroup)(<nil>),
+                Names: ([]*ast.Ident) <nil>,
+                Type: (*ast.Ident)(0xc00007cf40)(error),
+                Tag: (*ast.BasicLit)(<nil>),
+                Comment: (*ast.CommentGroup)(<nil>)
+               })
+              },
+              Closing: (token.Pos) 1858
+             })
+            }),
+            Tag: (*ast.BasicLit)(<nil>),
+            Comment: (*ast.CommentGroup)(<nil>)
+           })
+          },
+          Closing: (token.Pos) 1860
+         }),
+         Incomplete: (bool) false
+        }),
+        Comment: (*ast.CommentGroup)(<nil>)
+       })
+      },
+      Rparen: (token.Pos) 0
+     })
+    },
+    Scope: (*ast.Scope)(0xc000010690)(scope 0xc000010690 {
+	var Specific
+	var ErrUnknown
+	var ErrInvalidArgument
+	var ErrPermissionDenied
+	var ErrPersonNotFound
+	type Calc
+}
+),
+    Imports: ([]*ast.ImportSpec) (len=3 cap=4) {
+     (*ast.ImportSpec)(0xc00009c990)({
+      Doc: (*ast.CommentGroup)(<nil>),
+      Name: (*ast.Ident)(<nil>),
+      Path: (*ast.BasicLit)(0xc00007c7e0)({
+       ValuePos: (token.Pos) 933,
+       Kind: (token.Token) STRING,
+       Value: (string) (len=9) "\"context\""
+      }),
+      Comment: (*ast.CommentGroup)(<nil>),
+      EndPos: (token.Pos) 0
+     }),
+     (*ast.ImportSpec)(0xc00009c9c0)({
+      Doc: (*ast.CommentGroup)(<nil>),
+      Name: (*ast.Ident)(<nil>),
+      Path: (*ast.BasicLit)(0xc00007c800)({
+       ValuePos: (token.Pos) 944,
+       Kind: (token.Token) STRING,
+       Value: (string) (len=7) "\"embed\""
+      }),
+      Comment: (*ast.CommentGroup)(<nil>),
+      EndPos: (token.Pos) 0
+     }),
+     (*ast.ImportSpec)(0xc00009c9f0)({
+      Doc: (*ast.CommentGroup)(<nil>),
+      Name: (*ast.Ident)(<nil>),
+      Path: (*ast.BasicLit)(0xc00007c840)({
+       ValuePos: (token.Pos) 953,
+       Kind: (token.Token) STRING,
+       Value: (string) (len=8) "\"errors\""
+      }),
+      Comment: (*ast.CommentGroup)(<nil>),
+      EndPos: (token.Pos) 0
+     })
+    },
+    Unresolved: ([]*ast.Ident) (len=21 cap=32) {
+     (*ast.Ident)(0xc00007c8a0)(embed),
+     (*ast.Ident)(0xc00007c920)(errors),
+     (*ast.Ident)(0xc00007c9a0)(errors),
+     (*ast.Ident)(0xc00007ca40)(errors),
+     (*ast.Ident)(0xc00007cac0)(errors),
+     (*ast.Ident)(0xc00007cb80)(context),
+     (*ast.Ident)(0xc00007cbe0)(AddArg),
+     (*ast.Ident)(0xc00007cc00)(AddReply),
+     (*ast.Ident)(0xc00007cc20)(error),
+     (*ast.Ident)(0xc00007cc80)(context),
+     (*ast.Ident)(0xc00007cce0)(DivArg),
+     (*ast.Ident)(0xc00007cd00)(DivReply),
+     (*ast.Ident)(0xc00007cd20)(error),
+     (*ast.Ident)(0xc00007cd80)(context),
+     (*ast.Ident)(0xc00007cde0)(MulArg),
+     (*ast.Ident)(0xc00007ce00)(MulReply),
+     (*ast.Ident)(0xc00007ce20)(error),
+     (*ast.Ident)(0xc00007cea0)(context),
+     (*ast.Ident)(0xc00007cf00)(GetUserInfoArg),
+     (*ast.Ident)(0xc00007cf20)(GetUserInfoReply),
+     (*ast.Ident)(0xc00007cf40)(error)
+    },
+    Comments: ([]*ast.CommentGroup) <nil>
+   })
+  }
+ })
+}
+(interface {}) <nil>

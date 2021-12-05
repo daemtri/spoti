@@ -1,0 +1,5 @@
+package gobuild
+
+func Build() {
+
+}
